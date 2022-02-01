@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button><a routerLink="../view-table">View Table</a></button>
+    <div>
+        <h3>Add your today's Task!!!</h3>
+    
+        <form  (ngSubmit)= "onSubmit(data.value)" #data = "ngForm">
+           <div class="main-container">
+               <div>Task Id:
+                     <input type="text" disabled [(ngModel)]='task_id' class="form-control" name="task_id">
+               </div>
+                <div>
+                    Date:
+                    <input  type="text" disabled [(ngModel)]='date' class="form-control" name="date" >
+                </div>
+                <div><br>
+                    Task:<br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<textarea [(ngModel)]='task' class="form-control" name="task" required></textarea>
+                </div>
+                <div>
+                    Comment:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<textarea [(ngModel)]='comment' class="form-control" name="comment" required></textarea>
+                </div>
+               <div class="button"> <input type="submit" [disabled]=!data.valid value="ADD TASK"></div> 
+           </div>
+        </form>
+    </div>
+</body>
+</html>

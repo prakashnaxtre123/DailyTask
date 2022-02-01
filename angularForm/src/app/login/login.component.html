@@ -1,0 +1,32 @@
+
+<body>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> Log In </h2>
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/575/331/small/vector60-5811-01.jpg" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form (ngSubmit)= "onSubmit(f.value)" #f="ngForm">
+        <div class="form-group">
+            <input type="text" id="login" class="fadeIn second"  class="form-control" [(ngModel)]="email" email=true name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" class="fadeIn third"  class="form-control" [(ngModel)]="password"  name="password" placeholder="password" required>
+        </div>
+        <input type="submit" class="fadeIn fourth" [disabled]=!f.valid value="Log In">
+        <div>
+          New Users<a routerLink="../register">Register</a>here.
+        </div>
+      </form>
+  
+      <!-- Remind Passowrd -->
+     
+  
+    </div>
+  </div>
+</body>

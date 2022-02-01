@@ -1,0 +1,9 @@
+body{
+    height: 100%;
+    background-image: url("https://images.ctfassets.net/j7pfe8y48ry3/5ax9Zl4ZOMoYgg6OieqCQM/057bf91a0a9ef18287cd0d77b5f2968a/homepagevideo.png"); 
+}
+div{
+    padding: 10px;
+    margin: 5px;
+    background-color: cadetblue;
+}

@@ -1,0 +1,49 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>View of TaskTable</h1>
+    <button><a routerLink="/table">Add Data</a></button><br><br>
+    <div class="show">
+        Number of Data Shown in a Page<select [(ngModel)]="itemsPerPage">
+            <option  value="3">3</option>
+            <option  value="5">5</option>
+            <option  value="{{allTask.length}}">All Data</option>
+        </select>
+    </div>
+    <table>
+        <thead>
+            <tr class="table-heading" >
+                <th>Serial No.</th>
+                <th>Task ID</th>
+                <th>Date</th>
+                <th>Task(Editable)</th>
+                <th>Comment(Editable)</th>
+                <th>Update Data</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let task of allTask | paginate:{
+                    itemsPerPage:itemsPerPage,
+                    currentPage:page
+          }; index as i " >
+            <td class="button">{{i+1}}</td>
+            <td class="button">{{task.task_id}}</td>
+            <td class="button">{{task.date}}</td>
+            <td title="U can Edit it" class="editable"><textarea [(ngModel)]="task.task" class="editable">{{task.task}}</textarea></td>
+            <td title="U can Edit it" class="editable"><textarea [(ngModel)]="task.comment" class="editable">{{task.comment}}</textarea></td>
+            <td class="button">&nbsp;&nbsp;<button (click)="updateData(task._id,task.task,task.comment)">Update</button>&nbsp;&nbsp;
+                <button (click)="deleteData(task._id)">Delete</button></td>
+        </tr>
+       
+        
+    </table>
+    <pagination-controls (pageChange)="page=$event" ></pagination-controls>
+
+   
+</body>
+</html>

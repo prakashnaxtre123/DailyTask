@@ -1,0 +1,51 @@
+table{
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center !important;
+
+}
+td,th{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 0px solid #ccc;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    outline: none;
+    resize: none
+}
+.editable{
+    background-color: bisque;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    background-color: yellowgreen;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: turquoise;
+}
+.button{
+    background-color: gainsboro;
+}
+.table-heading{
+    background-color: yellow;
+    padding: 5px;
+    text-align: center;
+}
+body{
+    background-color: rgb(19, 122, 219);
+}
+.show{
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

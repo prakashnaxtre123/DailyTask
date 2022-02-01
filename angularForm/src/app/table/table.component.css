@@ -1,0 +1,46 @@
+.main-container{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 70%;
+    min-width: 100px;
+    margin: auto;
+    padding: 10px;
+    background-color: lightsteelblue;
+
+}
+
+textarea{
+    width: 85%;
+    background-color:white;
+    height: 200px;
+    overflow-y: auto;
+    outline: none;
+    resize: vertical;
+   
+}
+.success{
+    border: none !important;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: turquoise;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: lightsteelblue;
+}
+input[type=submit]{
+    background-color: rgb(209, 189, 189);
+    border: 2px solid;
+
+}
+.button{
+    text-align: right;
+}
+body{
+    background-color: rgb(215, 223, 215);
+}

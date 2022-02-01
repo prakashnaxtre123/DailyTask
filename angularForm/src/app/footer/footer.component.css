@@ -1,0 +1,10 @@
+div{
+    width: 98%;
+    position: fixed;
+    left: 10px;
+    bottom: 0px;
+    text-align: center;
+    background-color: gray;
+    height: 20px;
+    margin: auto;
+}
