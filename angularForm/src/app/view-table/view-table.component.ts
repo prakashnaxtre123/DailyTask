@@ -15,7 +15,7 @@ export class ViewTableComponent implements OnInit {
    task:string="";
    comment:string="";
    page:any;
-   itemsPerPage:number=5;
+   itemsPerPage:number=6;
   /*  sr_no:any=[]; */
   constructor(private http:HttpClient,private router:Router) { 
    //this.allTask=this.allTask;

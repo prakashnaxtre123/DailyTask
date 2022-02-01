@@ -22,11 +22,7 @@ export class RegisterComponent implements OnInit {
   constructor(
      private http: HttpClient,
      private router:Router
-     ) {
-       
-     }
-  
-   
+     ) {  }
   
   ngOnInit(): void {
     const sessionData=sessionStorage.getItem("userdata");
