@@ -40,7 +40,7 @@ export class ViewTableComponent implements OnInit {
     };
     this.http.patch(environment.apiUrl+'updateTask',data).subscribe((res)=>{
      console.log(res);
-     alert("Data updated Sucessfully!!!")
+     alert("Data updated Successfully!!!")
      this.allTask=res;
      })
   }
@@ -50,7 +50,7 @@ export class ViewTableComponent implements OnInit {
     //this.allTask.splice(_id-1,1);
     this.http.delete(`${environment.apiUrl}deleteTask?_id=${_id}`).subscribe((res)=>{
       console.log(res);
-      alert("Data Deleted Sucessfully!!!!!!");
+      alert("Data Deleted Successfully!!!!!!");
        this.allTask=res; 
       
       },(error)=>{
