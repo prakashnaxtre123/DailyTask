@@ -106,7 +106,11 @@ app.post("/addTask",async(req,res)=>{
 
 app.get("/getTask", async(req,res)=>{
    try{
+       let i=0;
     const data = await TaskTable.find();
+    /* data.forEach((item, i) => {
+        item.sr_no = i + 1;
+      }); */
     res.status(200).send(data);
     console.log(data);
    }catch(err){

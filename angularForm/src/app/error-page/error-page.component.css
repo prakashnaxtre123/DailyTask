@@ -2,3 +2,11 @@ img{
     width: 100%;
     height: 100%;
 }
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(243, 235, 235);
+}
+body{
+    background-color: rgb(249, 49, 49);
+}
